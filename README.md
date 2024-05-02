@@ -65,4 +65,31 @@ $person["languages"][] = "Java";
 
 $result = file_get_contents(API_URL); //si solo quieres hacer un get de una api
 ?>
+
+// Estructura base de una funcion
+<?php
+function get_data($url){
+    $result = file_get_contents($url);
+    $data = json_decode($result, true);
+    return $data;
+}
+```
+> [!IMPORTANT]
+> los tipos en php son opcionales y se deben activar para definir los tipos estrictos es con 
+> declare (strict_types=1); // y habilita el tipado solo en este archivo y debe setearse arriba al inicio del archivo
+
+```php
+function get_data(string $url): string{ //se puede definir el tipo del dato de retorno con :tipo_dato 
+    $result = file_get_contents($url);
+    $data = json_decode($result, true);
+    return $data;
+}
+$data = get_data(321312) //esta 'cadena' de numeros la convierte en un string "321312" si no esta el tipado fuerte activado
+?>
+
+```
+- Las variables tienen scope global y local
+- las variables globales no son accesibles en el scope de una funcion a menos que se pase emediante parametros o a menos que se especifique usando:
+```php
+global $global_var;
 ```
