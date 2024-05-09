@@ -36,9 +36,10 @@ curl_close($ch); //cerramos la sesion de cURL
                                 </svg>
                             </div>
                             <div class="w-5/6">
-                                <h4 class="font-semibold text-lg text-gray-700 dark:text-indigo-300">First API</h3>
+                                <h4 class="font-semibold text-lg text-gray-700 dark:text-indigo-300">First API</h4>
                                     <p class="text-gray-500 dark:text-gray-400">Dog API provides dog facts as a service.</p>
                                     <p class="text-indigo-400 dark:text-indigo-400"><a href="https://kinduff.github.io/dog-api/" target="_blank"> https://kinduff.github.io/dog-api/</a></p>
+                                </h4>
                             </div>
                         </div>
                         <div class="pt-4 flex gap-4 md:items-center">
@@ -48,7 +49,7 @@ curl_close($ch); //cerramos la sesion de cURL
                                 </svg>
                             </div>
                             <div class="w-5/6">
-                                <h4 class="font-semibold text-lg text-gray-700 dark:text-teal-300">Second API</h3>
+                                <h4 class="font-semibold text-lg text-gray-700 dark:text-teal-300">Second API</h4>
                                     <p class="text-gray-500 dark:text-gray-400">A simple service to get cute dogs as placeholders for your websites and designs. Just add a width and height to the end of the url.</p>
                                     <p class="text-teal-600 dark:text-teal-600"><a href="https://place.dog/" target="_blank">https://place.dog/</a></p>
                             </div>
