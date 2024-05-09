@@ -9,9 +9,8 @@ require_once 'consts.php';
 require_once 'functions.php';
 $dog_fact = get_data(DOG_FACTS_APIURL);
 ?>
+
 <?php render_template('head')?>
-<?php require_once './sections/dog_facts.php';?>
-<?php require_once './sections/dog_photos.php';?>
 
 <?php render_template('dog_facts', $dog_fact) ;?>
 <?php render_template('dog_photos', $dog_photo) ;?>
