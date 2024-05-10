@@ -7,10 +7,8 @@
 //Video2------------------------------------------------
 require_once 'consts.php';
 require_once 'functions.php';
-$dog_fact = get_data(DOG_FACTS_APIURL);
 ?>
 
 <?php render_template('head')?>
-
-<?php render_template('dog_facts', $dog_fact) ;?>
-<?php render_template('dog_photos', $dog_photo) ;?>
+<?php render_template('dog_facts') ;?>
+<?php render_template('dog_photos') ;?>
