@@ -93,3 +93,21 @@ $data = get_data(321312) //esta 'cadena' de numeros la convierte en un string "3
 ```php
 global $global_var;
 ```
+
+### Fusion de arrays
+```php
+array_merge($array1, $array2); //para unir dos arrays
+array_merge($data, ["new_key" => "new_value"]); //para agregar un nuevo valor a un array
+array_merge($data, ["new_key" => $new_value]); //para agregar un nuevo valor a un array
+```
+- Pasar solo un dato del array data:
+```php
+["title" => $data["title"]]
+```
+- En este caso, ```php ["title" => $data["title"]]``` está creando un nuevo array con una única entrada. La clave de esta entrada es "title", y el valor es $data["title"].
+
+- ```implode()``` une los elementos de un array en un string implode("separador como por ej ,", $array)
+- ```join()``` es un alias de implode()
+- ```var_dump($hero->show_all());``` var_dump() es una función de depuración que se utiliza para imprimir información detallada sobre una variable.
+- get_object_vars() es una función que se utiliza para obtener las propiedades públicas de un objeto dado como un array asociativo.
+- En resumen, ```var_dump()``` es una herramienta de depuración más general que puede manejar todo tipo de variables y proporciona información detallada sobre el tipo de datos, mientras que ```get_object_vars()``` es una función específica para objetos que devuelve las propiedades públicas de un objeto como un array asociativo.
